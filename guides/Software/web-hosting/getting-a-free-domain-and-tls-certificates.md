@@ -4,7 +4,6 @@ authors:
       link: https://github.com/ioqy
 label: Free Domain w/ TLS
 title: Getting a Free Domain with a TLS Certificate
-icon: star
 order: alpha
 ---
 

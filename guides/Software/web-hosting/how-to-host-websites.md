@@ -1,6 +1,6 @@
 ---
 label: How To Host Websites
-icon: globe
+icon: dot
 order: alpha
 ---
 
