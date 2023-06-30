@@ -1,0 +1,30 @@
+input: .
+output: .retype
+url: # Add your website address here
+branding:
+  title: r/SelfHosted
+  label: Wiki
+edit:
+  repo: "https://github.com/r-selfhosted/wiki/"
+  label: Edit on GitHub
+editor:
+  enabled: false
+favicon: static/favicon.png
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
+links:
+  - text: Home
+    link: /
+    icon: home
+  - text: Discord
+    link: https://discord.gg/BHDByBdKEV
+    icon: comment-discussion
+  - text: Forums
+    link: https://forum.r-selfhosted.com/
+    icon: note
+  - text: Mastodon
+    link: https://selfhosted.cafe
+    icon: heart
+  - text: Reddit
+    link: https://reddit.com/r/selfhosted
+    icon: cross-reference

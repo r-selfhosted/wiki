@@ -1,0 +1,23 @@
+---
+title: "r/SelfHosted Wiki"
+label: Home
+icon: home
+---
+
+We welcome you to explore the pages here and familiarize yourself with the layout of the wiki. If you have any suggestions on how the wiki can be better or alternative oganization methods, feedback or questions in general about the wiki please create an issue [here](https://github.com/r-selfhosted/wiki/issues) or open a [pull request](https://github.com/r-selfhosted/wiki)!
+
+You can chat with us at:
+- [Discord](https://discord.gg/BHDByBdKEV)
+- [Matrix](https://matrix.to/#/#selfhosted:matrix.org)
+    - [Element](https://app.element.io/#/room/#selfhosted:matrix.org) - Matrix Web Client
+- [Mastodon](https://selfhosted.chat)
+
+
+## Getting Started
+
+The following articles are great places to get started:
+
+* [What Is Self-Hosting?](learn/what-is-self-hosting)
+* [What are Reverse Proxies?](learn/what-are-reverse-proxies)
+* [Self-Hosted Alternatives to Popular Services and Providers](learn/self-hosted-alternatives-to-popular-services-and-providers)
+* [How to Host Websites](guides/how-to-host-websites)
