@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: # Add your website address here
+url: wiki.r-selfhosted.com
 branding:
   title: r/SelfHosted
   label: Wiki
