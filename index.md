@@ -6,12 +6,18 @@ icon: home
 
 We welcome you to explore the pages here and familiarize yourself with the layout of the wiki. If you have any suggestions on how the wiki can be better or alternative oganization methods, feedback or questions in general about the wiki please create an issue [here](https://github.com/r-selfhosted/wiki/issues) or open a [pull request](https://github.com/r-selfhosted/wiki)!
 
-You can chat with us at:
+## Official Pages
+
+The following are websites and pages which are considered official and supported by r/SelfHosted.
+
+- [Reddit Subreddit](https://reddit.com/r/selfhosted)
 - [Discord](https://discord.gg/BHDByBdKEV)
 - [Matrix](https://matrix.to/#/#selfhosted:matrix.org)
     - [Element](https://app.element.io/#/room/#selfhosted:matrix.org) - Matrix Web Client
 - [Mastodon](https://selfhosted.chat)
-
+- [Discourse Forums](https://forum.r-selfhosted.com/)
+- [Lemmy Community](https://lemmy.nexus/c/selfhosted)
+- [Kbin Magazine](https://kbin.boo/m/selfhosted)
 
 ## Getting Started
 
