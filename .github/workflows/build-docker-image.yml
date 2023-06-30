@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: wiki
 
 jobs:
-  push:
+  build-and-push:
     runs-on: ubuntu-latest
     permissions:
       packages: write
