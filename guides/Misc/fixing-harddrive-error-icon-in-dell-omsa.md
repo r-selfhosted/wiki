@@ -2,11 +2,14 @@
 authors:
     - name: jimmybrancaccio
       link: https://github.com/jimmybrancaccio
+      avatar: ":dragon_face:"
 label: Dell OMSA HDD Errors
 title: Fixing Hard Drive Error Icons in Dell OMSA
 icon: alert-fill
 order: alpha
 ---
+
+Difficulty: [!badge variant="success" text="Easy / Basic"]
 
 For those of us who are using non-Dell hard drives you may notice an error or warning icon in OMSA. They will also show up as uncertified which can be a bit annoying. Thankfully this is relatively easy to fix. If you've installed Dell OMSA to a Linux system you may follow these steps:
 

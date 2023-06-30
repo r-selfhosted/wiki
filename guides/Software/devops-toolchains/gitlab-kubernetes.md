@@ -2,6 +2,7 @@
 authors:
     - name: kmorton1988
       link: https://github.com/kmorton1988
+      avatar: ":dragon_face:"
 label: GitLab in Kubernetes
 icon: dot
 order: alpha

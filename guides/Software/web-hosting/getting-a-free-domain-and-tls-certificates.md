@@ -2,8 +2,10 @@
 authors:
     - name: ioqy
       link: https://github.com/ioqy
+      avatar: ":dragon_face:"
 label: Free Domain w/ TLS
 title: Getting a Free Domain with a TLS Certificate
+icon: dot
 order: alpha
 ---
 
