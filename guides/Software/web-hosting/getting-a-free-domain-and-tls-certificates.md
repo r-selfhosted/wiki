@@ -15,7 +15,7 @@ With this tutorial you will get a valid TLS certificate from Let's Encrypt witho
 
 The tutorial was written for and tested with Duck DNS and deSEC, but you can (in theory, because I did sadly encounter a few bugs/incompatibilities here and there) use [every one of the 150+ DNS providers supported by `acme.sh` (there is also a second page at the end)](https://github.com/acmesh-official/acme.sh/wiki/dnsapi). If you want to use a wildcard certificate I would recommend deSEC because Duck DNS currently has a bug/incompatibility with `acme.sh`.
 
-If you want to use another DNS provider you can skip right to step [2. Install acme.sh](#2-install-acmesh). You will need to change the parameter `--dns YOURDNS` in all the below commands and set the necessary variables yourself according to the [acme.sh DNS API wiki](https://github.com/acmesh-official/acme.sh/wiki/dnsapi).
+If you want to use another DNS provider you can skip right to step [Install `acme.sh`](#install-acmesh). You will need to change the parameter `--dns YOURDNS` in all the below commands and set the necessary variables yourself according to the [acme.sh DNS API wiki](https://github.com/acmesh-official/acme.sh/wiki/dnsapi).
 
 
 ## Select a DynDNS Provider
