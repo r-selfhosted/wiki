@@ -29,7 +29,7 @@ order: 100
 ---
 ```
 
-For pages located at the third level please set the `icon` to `dot`. An example of this our [page on WireGuard](/guides/virtual-private-networks/wireguard/).
+For pages located at the third level please set the `icon` to `dot`. An example of this our [page on WireGuard](/guides/Software/virtual-private-networks/wireguard).
 
 Below the meta section ensure you have a single newline and then begin your content. For example:
 
