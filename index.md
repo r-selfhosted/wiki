@@ -16,7 +16,6 @@ The following are websites and pages which are considered official and supported
   - [Element](https://app.element.io/#/room/#selfhosted:matrix.org) - Matrix Web Client
 - [Mastodon](https://selfhosted.chat)
 - [Discourse Forums](https://forum.r-selfhosted.com/)
-- [Lemmy Community](https://lemmy.nexus/c/selfhosted)
 
 ## Getting Started
 
