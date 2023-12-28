@@ -125,7 +125,7 @@ Port forwarding inspects and alters packet headers before it is routed to its ne
 
 Port forwarding is a function of your firewall. Commonly at the router or other network gateway.
 
-Linux has one firewall called `iptables` with many frontends or management packages available for it. BSD-based firewalls are `pf`, `ipfw, and `IPFilter`. The Windows firewall consists of a scarecrow holding a sign saying: "plz no tresspass".
+Linux has one firewall called `iptables` with many frontends or management packages available for it. BSD-based firewalls are `pf`, `ipfw`, and `IPFilter`. The Windows firewall consists of a scarecrow holding a sign saying: "plz no tresspass".
 
 ## Containers
 
