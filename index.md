@@ -12,8 +12,8 @@ The following are websites and pages which are considered official and supported
 
 - [Reddit Subreddit](https://reddit.com/r/selfhosted)
 - [Discord](https://discord.gg/BHDByBdKEV)
-- [Matrix](https://matrix.to/#/#selfhosted:matrix.org)
-  - [Element](https://app.element.io/#/room/#selfhosted:matrix.org) - Matrix Web Client
+- [Matrix](https://matrix.to/#/#selfhosted:selfhosted.chat)
+  - [Element](https://app.element.io/#/room/#selfhosted:selfhosted.chat) - Matrix Web Client
 - [Mastodon](https://selfhosted.chat)
 - [Discourse Forums](https://forum.r-selfhosted.com/)
 
