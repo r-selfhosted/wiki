@@ -11,7 +11,7 @@ We welcome you to explore the pages here and familiarize yourself with the layou
 The following are websites and pages which are considered official and supported by r/SelfHosted.
 
 - [Reddit Subreddit](https://reddit.com/r/selfhosted)
-- [Discord](https://discord.gg/BHDByBdKEV)
+- [Discord](https://discord.gg/UrZKzYZfcS)
 - [Matrix](https://matrix.to/#/#selfhosted:selfhosted.chat)
   - [Element](https://app.element.io/#/room/#selfhosted:selfhosted.chat) - Matrix Web Client
 - [Mastodon](https://selfhosted.chat)
