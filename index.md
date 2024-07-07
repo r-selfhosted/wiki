@@ -21,7 +21,7 @@ The following are websites and pages which are considered official and supported
 
 The following articles are great places to get started:
 
-- [What Is Self-Hosting?](learn/what-is-self-hosting)
-- [What are Reverse Proxies?](learn/what-are-reverse-proxies)
-- [Self-Hosted Alternatives to Popular Services and Providers](learn/self-hosted-alternatives-to-popular-services-and-providers)
-- [How to Host Websites](guides/software/web-hosting/how-to-host-websites)
+- [What Is Self-Hosting?](learn/what-is-self-hosting.md)
+- [What are Reverse Proxies?](learn/what-are-reverse-proxies.md)
+- [Self-Hosted Alternatives to Popular Services and Providers](learn/self-hosted-alternatives-to-popular-services-and-providers.md)
+- [How to Host Websites](guides/software/web-hosting/how-to-host-websites.md)
