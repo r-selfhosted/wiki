@@ -6,7 +6,7 @@ This is the official GitHub repository for the [r/SelfHosted](https://www.reddit
 
 ## 📖 Learning
 
-If you want to learn more about self hosting, start at [here](https://wiki.r-selfhosted.com).
+If you want to learn more about self hosting, start [here](https://wiki.r-selfhosted.com).
 
 ## 👷 Contributing
 
