@@ -78,6 +78,7 @@ You own personal knowledge base!
 - [DokuWiki](https://www.dokuwiki.org/DokuWiki) | A simple wiki that stores content in text files instead of a database.
 - [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) | The software that powers [Wikipedia](https://wikipedia.org).
 - [Cowyo](https://github.com/schollz/cowyo) | A minimal wiki/note-taking package.
+- [BookStack](https://www.bookstackapp.com/) | A simple to use wiki/information organisation tool.
 
 -----
 
