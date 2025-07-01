@@ -23,7 +23,8 @@ jobs:
         run: |
           echo "::add-mask::${{ secrets.SERVER_USERNAME }}"
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} << 'ENDSSH'
-          cd /home/::add-mask::synapse/docker/compose
+          export PS1='> '
+          cd ~/.docker/compose
           docker compose pull wiki
           docker compose up -d --remove-orphans wiki
           ENDSSH
