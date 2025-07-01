@@ -21,7 +21,6 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
       - name: Fetch and Deploy New Docker Image
         run: |
-          echo "::add-mask::${{ secrets.SERVER_USERNAME }}"
           ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} << 'ENDSSH'
           export PS1='> '
           cd ~/.docker/compose
