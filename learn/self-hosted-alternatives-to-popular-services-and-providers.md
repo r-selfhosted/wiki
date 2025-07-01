@@ -50,6 +50,7 @@ Software for operating and managing an e-shop.
 
 Services that synchronize files across systems.
 
+- [Nextcloud](https://nextcloud.com/)
 - [ownCloud](https://owncloud.com/)
 - [Syncthing](https://syncthing.net/)
 - [Seafile](https://www.seafile.com/en/home/)
