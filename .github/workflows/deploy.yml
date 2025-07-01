@@ -1,0 +1,30 @@
+name: Deploy New Docker Image
+
+on:
+  workflow_run:
+    workflows: ["Build and Publish Docker Image"]
+    types:
+      - completed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup SSH Key
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "${{ secrets.SERVER_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+      - name: Fetch and Deploy New Docker Image
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} << 'ENDSSH'
+          cd /home/${{ secrets.SERVER_USERNAME }}/docker/compose
+          docker compose pull wiki
+          docker compose up -d --remove-orphans wiki
+          ENDSSH
+      
+          
