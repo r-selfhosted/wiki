@@ -53,8 +53,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            ${{ env.DOCKERHUB_PREFIX }}/${{ env.DOCKER_IMAGE }}
-            ${{ env.GITHUB_CONTAINER_PREFIX }}/${{ env.DOCKER_IMAGE }}
+            ${{ env.DOCKERHUB_PREFIX }}/dselen/${{ env.DOCKER_IMAGE }}
+            ${{ env.GITHUB_CONTAINER_PREFIX }}/daanselen/${{ env.DOCKER_IMAGE }}
           tags: |
             type=ref,event=branch
             type=ref,event=tag
