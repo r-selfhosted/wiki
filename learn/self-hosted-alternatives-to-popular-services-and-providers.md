@@ -68,6 +68,7 @@ Daemons for streaming digital media.
 
 Software for operating a photo gallery.
 
+- [Ente](https://ente.io/)
 - [immich](https://immich.app)
 - [Chevereto](https://chevereto.com/free)
 - [Zenphoto](http://www.zenphoto.org/)
