@@ -52,6 +52,7 @@ Services that synchronize files across systems.
 
 - [Nextcloud](https://nextcloud.com/)
 - [ownCloud](https://owncloud.com/)
+- [OpenCloud](https://opencloud.eu/en)
 - [Syncthing](https://syncthing.net/)
 - [Seafile](https://www.seafile.com/en/home/)
 
