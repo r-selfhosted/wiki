@@ -16,6 +16,7 @@ The following are websites and pages which are considered official and supported
   - [Element](https://app.element.io/#/room/#selfhosted:selfhosted.chat) - Matrix Web Client
 - [Mastodon](https://selfhosted.chat)
 - [Discourse Forums](https://forum.r-selfhosted.com/)
+- IRC channel #selfhosted `irc.ircworld.org:6697 TLS / 6667 plaintext` - [Join #selfhosted via WebIRC](https://irc.ircworld.org/#/connect?join=selfhosted)
 
 ## Getting Started
 
