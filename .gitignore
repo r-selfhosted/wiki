@@ -1,0 +1,10 @@
+# Local dependencies
+/node_modules
+
+# Generated Retype output
+/.retype
+/.docker-build
+/retype.manifest
+
+# OS/editor noise
+.DS_Store
