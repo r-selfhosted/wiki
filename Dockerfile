@@ -1,9 +1,9 @@
-FROM mcr.microsoft.com/dotnet/sdk:9.0 AS builder
+FROM node:24-bookworm-slim AS builder
 
 WORKDIR /build
 COPY . /build
 
-RUN dotnet tool install retypeapp --version 4.6.0 --tool-path /bin
+RUN npm install --global retypeapp@4.6.0
 RUN bash scripts/normalize-icons.sh
 RUN retype build --output .docker-build/
 

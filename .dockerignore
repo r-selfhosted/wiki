@@ -3,7 +3,7 @@
 /.gitignore
 /.dockerignore
 
-# Local Retype/npm tooling is machine-specific; Docker installs Retype via dotnet.
+# Local Retype/npm tooling is machine-specific; Docker installs Retype via npm.
 /node_modules
 /package.json
 /package-lock.json
