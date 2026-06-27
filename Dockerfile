@@ -4,7 +4,7 @@ WORKDIR /build
 COPY . /build
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends libicu72 \
+    && apt-get install -y --no-install-recommends libicu72 libssl3 \
     && rm -rf /var/lib/apt/lists/*
 RUN npm install --global retypeapp@4.6.0
 RUN bash scripts/normalize-icons.sh
