@@ -1,14 +1,11 @@
-FROM node:24-bookworm-slim AS builder
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS builder
 
 WORKDIR /build
 COPY . /build
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends libicu72 libssl3 \
-    && rm -rf /var/lib/apt/lists/*
-RUN npm install --global retypeapp@4.6.0
+RUN dotnet tool install retypeapp --tool-path /bin
 RUN bash scripts/normalize-icons.sh
-RUN retype build --output .docker-build/ && test -d .docker-build
+RUN retype build --output .docker-build/
 
 FROM httpd:2.4
 COPY --from=builder /build/.docker-build/ /usr/local/apache2/htdocs/
