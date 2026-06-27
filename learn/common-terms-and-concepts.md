@@ -14,7 +14,7 @@ Servers are machines whose purpose is to provide a service or content over a net
 
 Daemons are software packages that run perpetually to provide content or a service. They differentiate servers from clients. Examples of daemons are webservers, email servers, file servers, authentication services (AD, LDAP), database servers, and many more.
 
-### Webservers
+## Webservers
 
 Webservers are daemons that accept HTTP requests and serve set content based on the requested host (IP address or domain name). The content can be static HTML/XML or it can be dynamic (JavaScript, PHP, FCGI, WSGI). Webservers commonly offer reverse proxy functionality, it is common to use webservers for this purpose instead. Common webservers include: Apache, Cherokee, LiteSpeed, Lighttpd, nginx, and IIS. Apache and nginx are the top webservers by market share respectively, with IIS coming in third.
 
@@ -35,7 +35,7 @@ Registering a domain name is done with a *Domain Registrar*. Prices are based on
 
 Accreditation requires quite a bit of infrastructure and vetting to make sure you can handle all aspects of registering and maintaining domains on behalf of the registrant. Resellers are popular because of low overhead and easy implementation. Many "white label" registrars have turnkey solutions for resellers to appear as independent registrars while actually reselling domain names.
 
-#### Which Is Right For You?
+### Which Is Right For You?
 
 Choosing a domain registrar is easy. Picking a domain registrar that is trustworthy and reputable is less so. Many domain registrars also offer to handle the DNS records for the domains registered with them. Many registrars have domain registration as a part of their business. Registration is usually bundled with webhosting or other related services. You may even get a domain registration for free if you agree to a year-long hosting contract with a webhost. While bundling related services together under one roof may sound convenient, it is generally not a good idea. It is recommended to have your domain registration with a registrar, DNS records with another company, and hosting with yet another entity. Common reasoning for this piece of advice is that if your service provider has a serious outage or other technical problem, it can only affect one aspect of your online presence. If you have all services under one provider, a technical issue could prevent your DNS from resolving and your website/service from being served.
 
@@ -47,13 +47,13 @@ As far as finding a reputable, trustworthy service provider, we must insist on y
 
 The Domain Name System (DNS) is the method of defining what unique machines serve content for your domain. The important parts of DNS you have to worry about are *nameservers* and *DNS records*.
 
-#### Nameservers
+### Nameservers
 
 Nameservers are a way to declare which servers are responsible for answering record requests for your domain. Most registrars provide DNS services, but if you have your DNS provided elsewhere, you will want to provide your primary and secondary nameservers to your registrar. The nameservers to use will be provided by your DNS service provider.
 
 E.g.: `ns1.dnsnameserver.net`, `ns2.dnsnameserver.net`
 
-#### DNS Records
+### DNS Records
 
 DNS records are part of your domain name configuration called a DNS *zone*.
 
@@ -106,11 +106,11 @@ There are many types of DNS records, let's go over some common ones. This list i
 
 ## Reverse Proxies
 
-Reverse proxies are daemons that accept connections and then connect to another service based on port or host to facilitate the request. They act as a middleman instead of a traffic redirector.
+Reverse proxies are software that accept connections and then connect to another service based on port or host to facilitate the request. They act as a middleman instead of a traffic redirector.
 
 Typical use cases for reverse proxies are to provide a unified frontend for multiple backends or hosts. Another common use is for high-availability to provide failover or distribute load between multiple backends serving the same content.
 
-Examples of popular software capable of performing as a reverse proxy are: Squid, HAProxy, Apache, nginx, and Caddy.
+Examples of popular software capable of performing as a reverse proxy are: Squid, HAProxy, Apache, nginx, Traefik and Caddy. You can learn more about [reverse proxies here](/guides/software/reverse-proxy-servers/what-are-reverse-proxies.md).
 
 
 ## Port Forwarding
@@ -137,7 +137,7 @@ Popular containers are Linux Containers (LXC), jails (BSD UNIX), Kubernetes, and
 
 Virtualization is a lower level form of containerization. There are many forms of virtualization that provide different sets of features/tradeoffs. In practice, it often virtualizes whole or major parts of an operating system.
 
-### Full virtualization
+### Full Virtualization
 
 Full virtualization is generally understood as the containerization of a full, unmodified operating system with virtualized hardware. The virtualized OS is not host-aware. Fully virtualized guests require more overhead than paravirtualized guests. This can be mitigated with hardware support (Intel VT, AMD SVM) for virtualization instructions.
 
@@ -154,7 +154,7 @@ Microsoft Windows cannot be paravirtualized.
 Examples: Xen, Oracle VM, OpenVZ.
 
 
-## Virtual private networks
+## Virtual Private Networks
 
 Virtual private networks (VPNs) are a way of networking individual machines together in software regardless of their physical or network proximity. A typical use case is for networking corporate locations together to share network resources such as file shares, intranet webservers, on-premises services, etc. Another use for a VPN is to tunnel traffic destined for a public service through to another endpoint, usually to bypass geo-location restrictions or state-imposed censorship of the Internet.
 

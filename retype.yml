@@ -16,15 +16,16 @@ links:
   - text: Home
     link: /
     icon: home
-  - text: Discord
-    link: https://discord.gg/UrZKzYZfcS
-    icon: comment-discussion
-  - text: Forums
-    link: https://forum.r-selfhosted.com/
-    icon: note
-  - text: Mastodon
-    link: https://selfhosted.cafe
-    icon: heart
   - text: Reddit
     link: https://reddit.com/r/selfhosted
-    icon: cross-reference
+    icon: fa-reddit
+  - text: Discord
+    link: https://discord.gg/UrZKzYZfcS
+    icon: fa-discord
+  - text: Matrix
+    link: https://matrix.to/#/#r-selfhosted:matrix.org
+    icon: fa-matrix
+  - text: Mastodon
+    link: https://selfhosted.cafe
+    icon: fa-mastodon
+

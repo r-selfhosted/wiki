@@ -1,7 +1,7 @@
 ---
 label: What Are Reverse Proxies?
 icon: arrow-switch
-order: alpha
+order: 20
 ---
 
 What can a reverse proxy do for *you*?

@@ -4,6 +4,7 @@ WORKDIR /build
 COPY . /build
 
 RUN dotnet tool install retypeapp --version 4.6.0 --tool-path /bin
+RUN bash scripts/normalize-icons.sh
 RUN retype build --output .docker-build/
 
 FROM httpd:2.4

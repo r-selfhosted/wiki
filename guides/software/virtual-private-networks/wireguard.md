@@ -10,7 +10,7 @@ order: alpha
 
 Difficulty: [!badge variant="primary" text="Medium / Intermediate"]
 
-WireGuard is a secure VPN tunnel that aims to provide a VPN that is easy to use, fast, and with low overhead. It is cross-platform, but it is the part of the Linux kernel by default with only the need of userland tools to configure and deploy it.
+WireGuard is a secure VPN tunnel that aims to be easy to use, fast, and low overhead. It is cross-platform, and on modern Linux systems it is part of the kernel by default. You only need the userland tools to configure and deploy it.
 
 ## Preface
 
@@ -18,7 +18,7 @@ We are going to assume that we are working in a Linux environment to configure W
 
 ## Installation
 
-You can find more details about installing WireGuard on your own operating system here: https://www.wireguard.com/install/. Please complete installation for both the server and client machine.
+You can find more details about installing WireGuard on your own operating system here: https://www.wireguard.com/install/. Please complete installation on both the server and client machines.
 
 ### Create the Keys
 
@@ -50,7 +50,7 @@ ListenPort = 51194
 PrivateKey = PRIVATEKEY
 ```
 
-After this is done we should be able to start the VPN tunnel and make sure it's enabled.
+After this is done, we should be able to start the VPN tunnel and make sure it's enabled.
 
 !!!
 Please consult the documentation for your Linux distribution for enabling/starting services. This guide is using system tools installed on Debian and Debian-based distributions.
@@ -92,12 +92,11 @@ Endpoint = WGSERVERPUBLICIP:51194
 PersistentKeepalive = 20
 ```
 
-This should be all you need for configuring the client-end connection. We will need the private client IP you've chosen and the public client key in a bit. As with the server, we need to enable the WireGuard client service. We don't start it yet because the server still doesn't know about this client.
+This should be all you need for configuring the client connection. We will need the private client IP you've chosen and the public client key in a bit. As with the server, we need to enable the WireGuard client service. We don't start it yet because the server still doesn't know about this client.
 
 ```bash
 systemctl enable wg-quick@wg0-client
 ```
-   
 
 ### Configuring the Client as a Peer
 
@@ -107,7 +106,9 @@ Back on your server, we need to add the client so the server will accept the cli
 wg set wg0 peer CLIENTPUBLICKEY allowed-ips CLIENTPRIVATEIP/32
 ```
 
-You should not need to restart the WireGuard service. Lets start the WireGuard client service on the client:
+If `SaveConfig = true` is set in your server configuration, WireGuard can write runtime peer changes back to disk when the interface shuts down. If you remove `SaveConfig` or set it to `false`, add the peer to `/etc/wireguard/wg0.conf` manually so the peer survives a restart.
+
+You should not need to restart the WireGuard service. Let's start the WireGuard client service on the client:
 
 ```bash
 systemctl start wg-quick@wg0-client
@@ -129,7 +130,7 @@ If you consider your client Internet connection stable, this next step may not b
 
 ## WireGuard Watchdog (OPTIONAL)
 
-Next we are going to setup a small cronjob that will ping the WireGuard server on its private IP to make sure the connection is still intact. If the connection fails, the tunnel will be restarted.
+Next, we are going to set up a small cron job that will ping the WireGuard server on its private IP to make sure the connection is still intact. If the connection fails, the tunnel will be restarted.
 
 You can put this script anywhere, but I've opted to put it in `/usr/local/scripts/`.
 
@@ -137,7 +138,7 @@ You can put this script anywhere, but I've opted to put it in `/usr/local/script
 mkdir /usr/local/scripts
 ```
 
-Now for the script. I use `wg-watch.sh`. Let's assume you are going to use ``/usr/local/scripts/wg-watch.sh` for the full file path.
+Now for the script. I use `wg-watch.sh`. Let's assume you are going to use `/usr/local/scripts/wg-watch.sh` for the full file path.
 
 ```bash
 #!/usr/bin/bash
@@ -167,10 +168,10 @@ echo "wg failed 3 times - restarting tunnel"
 $SERVICE wg-quick@wg0-client restart
 ```
 
-Please make sure the paths to certain binaries are congruent with your own system. If they are not, the script will fail. Some distributions put them in different places (e.g. `/bin/bash` instead of `/usr/bin/bash`). If you are not sure where they are, you can do `which binaryname` that should report the full path to the binary.
+Please make sure the paths to certain binaries match your own system. If they do not, the script will fail. Some distributions put them in different places (e.g. `/bin/bash` instead of `/usr/bin/bash`). If you are not sure where they are, you can run `command -v binaryname`, which should report the full path to the binary.
 
 ```bash
-$ which bash
+$ command -v bash
 /usr/bin/bash
 ```
 
@@ -194,4 +195,4 @@ Once the crontab editor is open, add this:
 */5 * * * * /usr/local/scripts/wg-watch.sh
 ```
 
-Write and close the file. Crontab should confirm that it has been updated. You should now be setup with a WireGuard VPN tunnel between a server and a client along with a script to bring the tunnel back up if it fails!
+Write and close the file. Crontab should confirm that it has been updated. You should now be set up with a WireGuard VPN tunnel between a server and a client, along with a script to bring the tunnel back up if it fails!
