@@ -74,6 +74,15 @@ Software for operating a photo gallery.
 - [Zenphoto](http://www.zenphoto.org/)
 - [Piwigo](http://piwigo.org/)
 
+## Project Management
+
+Software for tracking issues, sprints, roadmaps, and team work.
+
+- [OpenProject](https://www.openproject.org/) | Project management with Gantt charts, agile boards, and time tracking.
+- [Plane](https://plane.so/) | Issues, cycles, modules, and roadmaps with a modern interface.
+- [Taiga](https://www.taiga.io/) | Agile project management for cross-functional teams using Scrum and Kanban.
+- [Windshift](https://windshift.sh/) | A self-hosted Jira alternative for work management.
+
 ## Wiki Software
 
 You own personal knowledge base!
